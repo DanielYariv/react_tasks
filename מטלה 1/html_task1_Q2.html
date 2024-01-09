@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>task1_Q2</title>
+    <link rel="stylesheet" href="task1_Q2_Q3.css" />
+  </head>
+  <body>
+    <form id="duck_form" class="form">
+      <br />
+      <label for="name">Duck Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="color">Duck Color:</label>
+      <input type="color" id="color" name="color" /><br /><br />
+      <label for="age">Duck Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        step="0.1"
+        min="0.1"
+        max="100"
+      /><br /><br />
+      <label for="weight">Duck Weight:</label>
+      <input
+        type="number"
+        id="weight"
+        name="weight"
+        step="0.1"
+        min="0.1"
+        max="150"
+      /><br /><br />
+      <label for="color">Duck Image Url:</label>
+      <input type="url" id="img" name="img" /><br /><br />
+      <input type="submit" id="submit" value="Submit" />
+    </form>
+    <input type="button" id="show" value="Show" hidden />
+    <input type="button" id="quack" value="Quack" hidden />
+    <audio id="duck_audio">
+      <source src="single-quack-from-a-duck-14494.mp3" type="audio/mp3" />
+    </audio>
+    <p id="dynamic_p"></p>
+    <script src="task1_Q2.js"></script>
+  </body>
+</html>
