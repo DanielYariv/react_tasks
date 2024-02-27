@@ -115,7 +115,7 @@ export const useDetailsCommonLogic = () => {
     } else {
       setFormData({
         ...formData,
-        photo: null,
+        photo: "error",
       });
       setFileError("Please select a valid JPG or JPEG file.");
     }

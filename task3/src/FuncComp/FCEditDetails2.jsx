@@ -51,7 +51,8 @@ export default function FCEditDetails2(props) {
       formData.password !== formData.confirmPassword ||
       age < 18 ||
       age > 120 ||
-      cities.includes(formData.city) == false
+      cities.includes(formData.city) == false ||
+      formData.photo == "error"
     ) {
       event.stopPropagation();
       Swal.fire({

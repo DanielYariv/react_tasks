@@ -37,7 +37,7 @@ export default function FCRegister2() {
       age < 18 ||
       age > 120 ||
       cities.includes(formData.city) == false ||
-      formData.photo == null
+      formData.photo == "error"
     ) {
       event.stopPropagation();
       Swal.fire({
