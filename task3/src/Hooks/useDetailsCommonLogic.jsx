@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+//use it to handle common things between register and edit
 
 //help function to birthdate handle
 const ageCalc = (value) => {
