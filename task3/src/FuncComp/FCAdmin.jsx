@@ -38,7 +38,7 @@ export default function FCAdmin(props) {
           {props.users.map((user, index) => (
             <tr key={index}>
               <td>
-                <img src={user.photo}></img>
+                <img src={user.photo} style={{ width: 40, height: 40 }}></img>
               </td>
               <td>{user.username}</td>
               <td>{user.firstName + " " + user.lastName}</td>

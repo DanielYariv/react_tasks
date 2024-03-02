@@ -68,7 +68,7 @@ export default function FCLogin(props) {
       Swal.fire({
         icon: "error",
         title: "Login failed!",
-        text: "Invalid username or password.",
+        text: "Check username or password.",
         confirmButtonText: "OK",
       });
     }

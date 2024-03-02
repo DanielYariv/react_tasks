@@ -63,6 +63,9 @@ export default function FCForm(props) {
                   minLength="7"
                   maxLength="12"
                   onChange={props.handleChange}
+                  onCopy={(e) => e.preventDefault()}
+                  onPaste={(e) => e.preventDefault()}
+                  onCut={(e) => e.preventDefault()}
                 />
                 <Form.Control.Feedback type="invalid">
                   <ul>
@@ -90,6 +93,9 @@ export default function FCForm(props) {
                   maxLength={props.formData.password.length}
                   isInvalid={props.confirmPasswordError !== ""}
                   onChange={props.handleChange}
+                  onCopy={(e) => e.preventDefault()}
+                  onPaste={(e) => e.preventDefault()}
+                  onCut={(e) => e.preventDefault()}
                 />
                 <Form.Control.Feedback type="invalid">
                   {props.confirmPasswordError}
